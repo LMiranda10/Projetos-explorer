@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.page {
+    width: 750px;
+    margin: 0 auto;
+}
+
+form {
+    width: 750px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.form-wrapper {
+    width: 620px;
+    padding: 64px;
+    gap: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+body::before {
+    content: '';
+    background: #535971;
+
+    height: 436px;
+    width: 100%;
+
+    position: absolute;
+    z-index: -1;
+}
+
+
+header {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    width: 319px;
+
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 48px;
+    line-height: auto;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20;
+    line-height: auto;
+}
+
+label {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #726e79;
+}
+
+fieldset {
+    width: 620px;
+}
+
+fieldset .col-label {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+fieldset .name {
+    max-width: 620px;
+    display: flex;
+    gap: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    background: #FAFAFC;   
+
+    border: 1px solid #8f8f96;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 56px;
+
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #C1BCCC;
+
+    margin-bottom: 20px;
+}
+
+.name #first-name, #last-name {
+    width: 300px;
+}
+
+fieldset .col-3 {
+    display: flex;
+    gap: 10px;
+}
+
+fieldset .col-3 #event-date {
+    width: 300px;
+    margin-right: 22px;
+}
+
+footer {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #535971;
+
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 150px;
+}
+
+.button {
+    width: 600px;
+    background-color: #FF5374;
+    color: #FFFFFF;
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #c33f5a;
+    cursor: pointer;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#second-mentorship #event-date, #begin-time, #end-time {
+    margin-bottom: 0;
+}
+
+.last-fieldset {
+    margin-bottom: 0;
+}
