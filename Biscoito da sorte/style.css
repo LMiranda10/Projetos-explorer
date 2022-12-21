@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --fs-heading: 2.4rem;
+    --fs-texting: 1.5rem;
+
+    --ff-heading:'Montserrat', sans-serif;
+    --ff-texting: 'DM Sans', sans-serif;
+    --ff-messege:'Dancing Script', cursive;
+
+    --fc-page: #34355B;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+main .box1, .box2 {
+    background: #FFF;
+    padding: 5rem 6.5rem 6.5rem 6.5rem;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: var(--fc-page);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-heading);
+
+    line-height: 3rem;
+    width: 26rem;
+    text-align: center;
+
+    font-weight: 700;
+    justify-content: center;
+}
+
+main .box1 p {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    color: var(--fc-page);
+
+    line-height: 2rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.box2 .lucky {
+    font-family:'Dancing Script', cursive;
+    font-size: var(--fs-heading);
+    line-height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 2rem 0;
+    padding: 1rem;
+
+    width: 30rem; 
+    height: 10rem;
+
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+}
+
+
+.box2 button {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    font-weight: bold;
+    line-height: 2rem;
+
+    background: #FF9500;
+    border-radius: .4rem;
+    padding: 1.6rem;
+    color: #FFF;
+    border: none;
+}
+
+.box2 button:hover {
+    background: #de8100;
+    cursor: pointer;
+}
+
+.box1 .clickCookie:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.box2 .lucky {
+    animation: downtoup 1s;
+}
+
+@keyframes downtoup {
+    0% { transform: translateY(+100px);
+    }
+
+    100% { transform: translateY(0); }
+}
+
+main .hide {
+    display: none;
+}
