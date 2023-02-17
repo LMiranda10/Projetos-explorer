@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-general: 'Roboto', sans-serif;
+    --fc-general: #323238;
+}
+
+.timer {
+    font-family: var(--ff-general);
+    color: var(--fc-general);
+    font-size: 12.5rem;
+    line-height: 14.7rem;
+    letter-spacing: -10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    padding: 15rem;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    max-height: 100hv;
+    max-width: 100wv;
+
+    gap: 20rem;
+    justify-content: center;
+}
+
+.controls {
+    margin-top: 1.7rem;
+
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    object-fit: contain;
+    cursor: pointer;
+
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.right button {
+    background: #E1E1E6;
+    padding: 4.8rem;
+
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.minutes {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
